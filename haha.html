@@ -1,0 +1,227 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Document</title>
+  <style>
+    * {
+      margin: 0;
+      padding: 0;
+      box-sizing: border-box;
+      text-decoration: none;
+      list-style: none;
+    }
+
+    nav {
+      height: 100%;
+      background-color: rgb(37, 37, 37);
+      border-radius: 10px;
+      font-family: Arial, Helvetica, sans-serif;
+    }
+
+    nav div a {
+      display: block;
+      text-align: center;
+      line-height: 50px;
+      font-size: 20px;
+      color: rgb(255, 255, 255);
+    }
+
+    .active {
+      background-color: rgb(3, 129, 3) !important;
+      border-radius: 10px;
+    }
+
+    nav a:hover {
+      background-color: rgb(92, 94, 94);
+      border-radius: 10px;
+    }
+
+    .drop {
+      position: relative;
+    }
+
+    .dropmenu {
+      position: absolute;
+      top: -50%;
+      left: 60%;
+      background-color: rgb(37, 37, 37);
+      border-radius: 10px;
+      width: 90px;
+      white-space: nowrap;
+      display: none;
+    }
+
+    .drop:hover .dropmenu {
+      display: block;
+    }
+
+    @media only screen and (min-width: 800px) {
+      nav {
+        height: 50px;
+      }
+
+      nav div {
+        float: right;
+      }
+
+      div li {
+        float: left;
+      }
+
+      div li a {
+        padding: 0 20px;
+      }
+
+      .dropmenu {
+        display: none;
+        position: absolute;
+        top: 100%;
+        left: 0;
+        width: 120%;
+      }
+
+      .drop:hover .dropmenu {
+        display: block;
+      }
+
+      main {
+        display: grid;
+        grid-template-columns: 20% auto 25%;
+      }
+
+      .div4 {
+        position: relative;
+        bottom: 0;
+      }
+    }
+    .div2 a {
+      display: block;
+      background-color: rgb(49, 201, 228);
+      margin: 10px;
+      padding: 10px;
+      border-radius: 5px;
+      text-align: center;
+      color: rgb(0, 0, 0);
+    }
+
+    .div2 a:hover {
+      background-color: rgb(36, 228, 228);
+      font-size: 20px;
+      transition: 0.7s;
+    }
+
+    .div3 {
+      text-align: center;
+      height: 100%;
+      background-color: aqua;
+      margin: 10px;
+      padding: 20px;
+    }
+
+    .div4 {
+      text-align: center;
+      height: 100%;
+      background-color: aqua;
+      margin: 10px;
+      padding: 20px;
+    }
+  </style>
+</head>
+
+<body>
+  <nav>
+    <a href="practice1.html">
+      <img src="../image/Car2.jpg" height="30px" style="
+            position: relative;
+            top: 3px;
+            margin: 8px 6px 0 14px;
+            border-radius: 999px;
+          " />
+      <span style="font-size: 30px; color: rgb(255, 255, 255)">Habib khan</span></a>
+    <div class="div1">
+      <li><a href="practice1.html">Home</a></li>
+      <li class="drop">
+        <a href="practice2.html">About</a>
+        <ul class="dropmenu">
+          <li><a href="#">About 1</a></li>
+          <li><a href="#">About 2</a></li>
+          <li><a href="#">About 3</a></li>
+          <li><a href="#">About 4</a></li>
+        </ul>
+      </li>
+      <li><a href="practice3.html" class="active">Content</a></li>
+    </div>
+  </nav>
+  <main>
+    <div class="div2">
+      <a href="#">The Flight</a>
+      <a href="#">The City</a>
+      <a href="#">The city</a>
+      <a href="#">The City</a>
+    </div>
+    <div class="div5"
+      style="margin: 5px 20px;padding: 15px; box-shadow: 0px 0px 15px rgba(0, 0, 0,0.3),0px 0px 15px rgba(0, 0, 0,0.3),0px 0px 15px rgba(0, 0, 0,0.3),0px 0px 15px rgba(0, 0, 0,0.3);">
+      <p>
+      <h1>The City</h1>
+      Lorejbjmjmjmjmjmjmjmkjjjjjnmm ipsum dolor, sit amet consectetur adipisicing elit. Dicta quas
+      modi laudantium numquam minima facere iusto pariatur unde non!
+      Similique assumenda excepturi vero magnam et fuga fugit, eius est
+      tenetur natus consequuntur dolorem reprehenderit veniam quaerat
+      accusantium maiores illum, incidunt mollitia omnis cum aliquam?
+      Repellat fuga nihil aspernatur necessitatibus voluptates ut nesciunt
+      tenetur? Quisquam non alias unde praesentium architecto aliquid porro,
+      dicta autem, id nihil aperiabus laboriosam id ab
+      magnam animi saepe vel earum veritatis? Non sapiente eaque esse
+      laudantium! modi laudantium numquam minima facere iusto pariatur unde non!
+      Similique assumenda excepturi vero magnam et fuga fugit, eius est
+      tenetur natus consequuntur dolorem reprehenderit veniam quaerat
+      accusantium maiores illum, incidunt mollitia omnis cum aliquam?
+      Repellat fuga nihil aspernatur necessitatibus voluptates ut nesciunt
+      tenetur? Quisquam non alias unde praesentium architecto aliquid porro,
+      dicta autem, id nihil aperiabus laborios modi laudantium numquam minima facere iusto pariatur unde non!
+      Similique assumenda excepturi vero magnam et fuga fugit, eius est
+      tenetur natus consequuntur dolorem reprehenderit veniam quaerat
+      accusantium maiores illum, incidunt mollitia omnis cum aliquam?
+      Repellat fuga nihil aspernatur necessitatibus voluptates ut nesciunt
+      tenetur? Quisquam non alias unde praesentium architecto aliquid porro,
+      dicta autem, id nihil aperiabus laborios modi laudantium numquam minima facere iusto pariatur unde non!
+      Similique assumenda excepturi vero magnam et fuga fugit, eius est
+      tenetur natus consequuntur dolorem reprehenderit veniam quaerat
+      accusantium maiores illum, incidunt mollitia omnis cum aliquam?
+      Repellat fuga nihil aspernatur necessitatibus voluptates ut nesciunt
+      tenetur? Quisquam non alias unde praesentium architecto aliquid porro,
+      dicta autem, id nihil aperiabus laborios modi laudantium numquam minima facere iusto pariatur unde non!
+      Similique assumenda excepturi vero magnam et fuga fugit, eius est
+      tenetur natus consequuntur dolorem reprehenderit veniam quaerat
+      accusantium maiores illum, incidunt mollitia omnis cum aliquam?
+      Repellat fuga nihil aspernatur necessitatibus voluptates ut nesciunt
+      tenetur? Quisquam non alias unde praesentium architecto aliquid porro,
+      dicta autem, id nihil aperiabus laborios modi laudantium numquam minima facere iusto pariatur unde non!
+      Similique assumenda excepturi vero magnam et fuga fugit, eius est
+      tenetur natus consequuntur dolorem reprehenderit veniam quaerat
+      accusantium maiores illum, incidunt mollitia omnis cum aliquam?
+      Repellat fuga nihil aspernatur necessitatibus voluptates ut nesciunt
+      tenetur? Quisquam non alias unde praesentium architecto aliquid porro,
+      dicta autem, id nihil aperiabus laborios
+      </p>
+    </div>
+    <div class="div3">
+      <h1>Lorem, ipsum.</h1>
+      <p>Lorem ipsum dolor sit, amet consectetur adipisicing.</p>
+      <h1>Lorem, ipsum.</h1>
+      <p>Lorem ipsum dolor sit amet consectetur adipisicing elit.</p>
+    </div>
+  </main>
+  <footer>
+    <div class="div4">
+      <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Maxime inventore dolores natus aspernatur, dolor
+        sequi autem sunt, repudiandae quo, repellendus quidem velit qui placeat eligendi mollitia iusto fugiat accusamus
+        debitis?</p>
+    </div>
+  </footer>
+</body>
+
+</html>
