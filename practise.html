@@ -1,0 +1,163 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <style>
+        * {
+            padding: 0;
+            margin: 0;
+            box-sizing: border-box;
+            text-decoration: none;
+            list-style: none;
+        }
+
+        nav {
+            background-color: rgb(51, 53, 53);
+            overflow: hidden;
+            position: fixed;top: 0;
+            width: 100%;
+        }
+
+        div {
+            float: right;
+        }
+
+        div li {
+            float: left;
+            margin: 5px 0;
+        }
+
+        li a {
+            color: rgb(252, 252, 252);
+            padding: 20px;
+            font-size: 36px;
+            transition: all 0.3s ease;
+        }
+
+        div a:hover {
+            background-color: rgb(105, 104, 103);
+        }
+
+        .span {
+            font-size: 40px;
+            position: relative;
+            top: -7px;
+            color: rgb(255, 255, 255);
+            transition: 0.4s;
+        }
+
+        .active {
+            background-color: rgb(3, 148, 3) !important;
+        }
+
+        nav input {
+            display: none;
+        }
+
+        label .fa {
+            display: none;
+        }
+        @media only screen and (max-width:690px) {
+            .span {
+                font-size: 30px;
+                transition: 0.4s;
+            }
+        }
+
+
+        @media only screen and (max-width:600px) {
+            label .fa {
+                display: block;
+                float: right;
+                margin: 15px 10px;
+                font-size: 30px;
+                color: rgb(255, 255, 255);
+                cursor: pointer;
+            }
+            .span {
+                font-size: 25px !important;
+                transition: 0.4s;
+            }
+            #check:checked~div {
+                left: 0;
+                transition: 2s;
+            }
+
+            nav {
+                background-color: rgb(51, 53, 53);
+                overflow: hidden;
+                position: fixed;
+                width: 100%;
+            }
+
+            div {
+                float: none;
+                position: fixed;
+                background-color: rgb(41, 40, 40);
+                width: 100%;
+                left: -100%;
+            }
+
+            div li {
+                float: none;
+                margin: 5px 0;
+            }
+
+            li a {
+                color: rgb(252, 252, 252);
+                display: block;
+                margin: -5px 0;
+                font-size: 36px;
+                text-align: center;
+                transition: all 0.3s ease;
+            }
+
+            div a:hover {
+                background-color: rgb(105, 104, 103);
+            }
+
+            .span {
+                font-size: 40px;
+                position: relative;
+                top: -7px;
+                color: rgb(255, 255, 255);
+                transition: 0.4s;
+            }
+
+            .active {
+                background-color: rgb(3, 148, 3) !important;
+            }
+
+            section{margin: 60px 0;}
+        }
+        section{margin: 60px 0;}
+    </style>
+</head>
+
+<body>
+    <nav>
+        <input type="checkbox" id="check"><label class="ck" for="check"><i class="fa fa-bars"></i></label>
+        <a href=""><img src="../image/images (2).jpeg" height="35px" style="margin:  5px 10px;border-radius: 999px;">
+            <span class="span">Habib Khan</span></a>
+        <div class="div1">
+            <li><a href="#" class="active"><i class="fa fa-home"></i></a></li>
+            <li><a href="#"><i class="fa fa-search"></i></a></li>
+            <li><a href="#"><i class="fa fa-envelope"></i></a></li>
+            <li><a href="#"><i class="fa fa-globe"></i></a></li>
+            <li><a href="#"><i class="fa fa-trash"></i></a></li>
+        </div>
+    </nav>
+    <section>
+        <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Ipsum id saepe incidunt, aspernatur nobis
+            perspiciatis ad suscipit exercitationem pariatur maiores magnam eum cumque iusto iste unde provident esse
+            nostrum voluptas qui repellat. Sint suscipit dignissimos veritatis mollitia laborum placeat voluptas nemplaceat ea ratione obcaecati
+            assumenda vero error? Fuga ad suscipit adipisci laboriosam cupiditate ullam, explicabo repudiandae
+            reiciendis iure laborum officiis ea sequi minus iusto, et laudantium quas</p>
+    </section>
+</body>
+
+</html>
