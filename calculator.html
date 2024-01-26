@@ -59,13 +59,30 @@
         case "**":
             echo $a ** $b;
             break;
-        case "sqt":
-            echo(sqrt($c));
-            break;
         default:
             echo "the symble is incorrect";
     }
     ?>
+
+
+
+    <form action="index.php" method="post">
+        <h1>Enter the number you want table </h1>
+        <input type="number" name="table" id="table">
+        <input type="submit">
+
+        <?php 
+        $a=$_POST['table'];
+        $b=1;
+        for ($x = 0; $x <= 99; $x++){
+            echo "$a". "x" . $b . "=". $a*$b . "<br>" ;
+            $b++;
+        }
+        // while($b < 11){
+        //     echo "$a". "x" .$b. "=". $a*$b . "<br>" ;
+        //      $b++;
+        // }
+          ?>
 </body>
 
 </html>
